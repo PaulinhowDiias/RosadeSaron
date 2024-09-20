@@ -1,0 +1,465 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #151814;
+}
+
+header > .teste {
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    margin-left: 5px;
+    width: 25px;
+    margin-top: 18px;
+}
+.menufloat{
+    display: none;
+    position: absolute;
+    background-color: rgba(216, 216, 216, 0.3);
+    backdrop-filter: blur(5px);
+    margin-left: 5px;
+    width: 200px;
+    border: solid 1px #838282;
+    border-radius: 15px;
+    justify-content: center;
+    .menulist{
+        a{
+            color: #575757;
+            font-weight: bold;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            padding: 5px;
+            border: solid 1px #acabab;
+            border-radius: 10px;
+            &:hover{
+                transition: 0.6s;
+                background-color: #f5f2f2;
+                color: #DA608B;
+            }
+        }
+    }
+
+}
+
+.passar {
+    padding: 0.1px;
+    height: 25px;
+    margin-right: 5px;
+    margin-top: 19px;
+}
+
+.barrapesquisa {
+    display: flex;
+    width: 35vw;
+    height: 60px;
+}
+
+img.pesquisa {
+    height: 15px;
+}
+
+.buttonsearch {
+    height: 50%;
+    margin-top: 16px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+#busca {
+    margin-top: 16px;
+    height: 50%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.testeh1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Principal {
+    user-select: none;
+    width: 200px;
+    white-space: nowrap;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background-color: #DA608B;
+    font-family: 'Times New Roman', Times, serif;
+}
+a.inicio, a.inicio:visited {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.un:hover {
+    text-decoration: underline;
+}
+
+a.un:active {
+    color: #551AA4;
+}
+
+a.rp {
+    display: inline-block;
+    border-width: 1px;
+    padding: 4px;
+    transition-duration: 0.2s;
+    border-radius: 4px;
+    text-align: center;
+}
+
+a.rp:hover {
+    color: aliceblue;
+    background-color: #151814;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > a {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+a > img {
+    width: 25px;
+}
+
+.itens{
+    background-color: #c7c4e0;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: solid;
+    border-color: #838282;
+    border-right: none;
+    border-left: none;
+    border-width: 1px;
+}
+
+.float{
+    position: fixed;
+    top: 85vh;
+    right: 10px;
+    &:hover{
+        transition: 0.4s;
+        scale: 1.2;
+    }
+    img{
+        width: 40px;
+    }
+}
+.clear{
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: #151814;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+footer nav div {
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer nav div div.testet {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2.rd > p {
+    color: #DA608B;
+}
+
+a.un {
+    color: #DA608B;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 5px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-tab {
+    margin: 5px 0 5px 0;
+    max-width: 180px; 
+    min-width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff2ff;
+}
+
+.product-tab img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: -14%;
+}
+
+.product-info {
+    padding: 8%;
+    margin-bottom: -15px;
+}
+
+.product-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.botao {
+    background-color: #DA608B;
+    color: #fff;
+    margin-top: -6%;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #803851;
+}
+
+h2 {
+    white-space: nowrap;
+}
+.preco{
+    margin-top: -16%;
+}
+.detalhe{
+    margin-top: -8%;
+}
+
+.buttonmais{
+    background-color: transparent;
+    height: 50%;
+}
+.buttonmais:hover{
+    cursor: pointer;
+}
+.imgmais{
+    width: 20px;
+    height: 28px;
+}
+
+
+/* Area do index */
+.inputs{
+    width: 250px;
+    height: 260px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: solid 1px #adadad;
+}
+
+.inputduo{
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputsolo{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #d8d5d5;
+    &:hover{
+        border: solid 1px #adadad;
+    }
+}
+
+.teste67{
+    display: inline-block;
+    justify-content: center;
+}
+.id{
+    font-weight: bold;
+    font-size: medium;
+    padding: 6px;
+    color: #DA608B;
+}
+
+.buttomlogin{
+    width: 80px;
+    height: 30px;
+    margin-top: 22px;
+    border-radius: 20px;
+    background-color: #DA608B;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #996d6d;
+    &:hover{
+        transition: 0.6s;
+        background-color: #fff;
+        color: #DA608B;
+        border-color: #adadad;
+    }
+}
+.textlogin{
+    color: #DA608B;
+}
+.mainlogin{
+    display: inline;
+    justify-content: center;
+    margin: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    height: 490px ;
+}
+
+.mainlogin2{
+    display: none;
+    .titledados{
+        height: 50px;
+    }
+    .dadospessoais{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        border: solid 1px #adadad;
+        [name="genero"] {
+            cursor: pointer;
+        }
+    }
+    .submitcad{
+        cursor: pointer;
+        color: #444343;
+        border: solid 1px #838282;
+        border-radius: 5px;
+        width: 60px;
+        font-weight: bold;
+        padding: 5px;
+        &:hover{
+            transition: 0.6s;
+            color: #DA608B;
+            background-color: #ffffff;
+            border: solid 1px #adadad;
+        }
+    }
+    input{
+        outline: none;
+        border: solid 1px #adadad;
+        height: 25px;
+        display: flex;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        div{
+            border: solid 1px #adadad;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            background-color: #f5f5f5;
+            height: 30px;
+        }
+    }
+}
+
+.intermed{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.input{
+    border: solid 2px #adadad;
+}
+.linkregister{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.linkregistersub{
+    transition-duration: 0.4s;
+    background-color: #d8d5d5;
+    width: 240px;
+    height: 35px;
+    border: solid 1px #adadad;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e2e2e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.linkregistersub:hover{
+    background-color: #ffffff;
+    color: #DA608B;
+}
+.noregister{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}

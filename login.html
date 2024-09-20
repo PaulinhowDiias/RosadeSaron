@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/pngwing.com.png">
+    <title>Rosa de Saron - Login</title>
+    <link rel="stylesheet" href="Rosadesaron.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="testeh1">
+            <h1 class="Principal"><a href="index.html" class="Principal">Rosa de Saron</a></h1>
+        </div>
+
+        <div class="teste">
+            <div>
+                <a href="#" onclick="clickmenu()" onblur="menudesfocus()"> <img src="imagens/icon de mais.png" alt="" class="menu"></a>
+                <div class="menufloat" id="menuid">
+                    <div class="menulist">
+                        <a href="index.html">Home</a>
+                        <a href="login.html">Cadastro</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Sair</a>
+                    </div>
+                </div>
+            </div>
+            <div class="barrapesquisa">
+                <input type="search"  id="busca" placeholder="Pesquise aqui">
+                <button class="buttonsearch"> <img class="pesquisa" src="imagens/search.png"></button>
+            </div>
+            <div class="passar">
+                <a href="login.html" class="login"><img src="imagens/profile.png"></a>
+            </div>
+        </div>
+
+        <div class="itens">
+            <a class="rp" href="#">Feminina</a>
+            <a class="rp" href="#">Masculina</a>
+            <a class="rp" href="#">Infantil</a>
+            <a class="rp" href="#">Utensílios</a>
+            <a class="rp" href="#">Novidades</a>
+        </div>
+
+    </header>
+
+<main>
+
+    <div class="mainlogin" id="mainloginid">
+
+        <div class="intermed">
+            <h1>Faça seu login</h1>
+        </div>
+        <div class="teste67">
+            <form>
+                <div class="inputs">
+                    <h1 class="textlogin">login</h1>
+                    <div class="inputduo">
+                        <label for="email" class="id">Email</label>
+                        <input type="email" placeholder="Digite seu Email" class="inputsolo" name="email">
+                    </div>
+                    <br>
+                    <div class="inputduo">
+                        <label for="password" class="id">Senha</label>
+                        <input type="password" placeholder="Digite sua Senha" class="inputsolo" name="password">
+                    </div>
+                    <div>
+                        <button type="button" class="buttomlogin"> <strong>Login</strong></button>
+                    </div>
+                </div>
+            </form>
+            <p class="noregister">Não possui cadastro?</p>
+            <div class="linkregister">
+                <div>
+                    <a href="#"
+                    id="buttonregister"
+                    class="linkregistersub"
+                    onclick="clickregister()"
+                    >Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="mainlogin2" id="mainlogin2">
+        <div class="titledados">
+            <h1>Dados Pessoais</h1>
+        </div>
+        <div class="dadospessoais">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu Nome">
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome">
+            </div>
+            <div>
+                <label for="data">Nascimento</label>
+                <input type="date" name="data" id="inputdados">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Digite seu Email">
+            </div>
+            <div>
+                <label for="numero">Numero</label>
+                <input type="tel" name="numero" placeholder="Digite seu Numero">
+            </div>
+            <div>
+                <p>Genero</p>
+                <select name="genero">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+            <button type="button" class="submitcad">Enviar</button>
+        </div>
+        <p class="noregister">Já possui cadastro?</p>
+        <div>
+            <a id="buttonregister" class="linkregistersub"  onclick="buttonbacklogin()">Voltar ao Login</a>
+        </div>
+    </div>
+    
+</main>
+    
+<footer>
+    <nav>
+        <div>
+            <h2 class="rd">Redes Sociais</h2>
+            <div class="testet">
+                <a href="https://www.instagram.com/rosadsar0n/" target="_blank" rel="external" class="un">
+                    <img src="imagens/insta.png">
+                    <p>Instagram</p>
+                </a>
+                <a href="https://wa.me/message/3DWWYQWJDPZUH1" target="_blank" rel="external" class="un">
+                    <img src="imagens/whats.png">
+                    <p>Whatsapp</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div>
+            <h2 class="rd">Quem somos?</h2>
+            <p> Somos uma loja de roupa intima feminina, localizada na <br>Boca do Rio - Salvador (BA) e <br>em Tanquinho - Lençois (BA)</p>
+        </div>
+    </nav>
+    <nav>
+        <div>
+            <h2 class="rd">Nossas Lojas</h2>
+            <li><a class="un" href="https://maps.app.goo.gl/qHvP8tRhnGQoZCMN9" target="_blank" rel="external">Salvador - Bahia</a></li>
+            <li><a class="un" href="https://maps.app.goo.gl/a4bVwir39gB2Sqak6" target="_blank" rel="external">Lençois - Bahia</a></li>
+            <br>
+        </div>
+    </nav>
+</footer>
+<script src="rosajavas.js"></script>
+</body>
+
+</html>
